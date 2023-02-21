@@ -22,7 +22,7 @@ garchery.eth
 
 ### Execution
 ```
-geth --http --authrpc.addr localhost --authrpc.port 8551 --authrpc.vhosts localhost --authrpc.jwtsecret ~/.ethereum/geth/jwtsecret
+geth --http --http.port 8545 --http.addr "0.0.0.0" --http.corsdomain "*" -http.api "eth,web3,personal" --authrpc.jwtsecret ~/.ethereum/geth/jwtsecret
 ```
 
 Attach a node terminal
